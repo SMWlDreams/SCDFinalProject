@@ -22,6 +22,7 @@ public class Main extends Application {
         primaryStage.getIcons().add(new Image("/fun/icon.png"));
         primaryStage.setResizable(false);
         primaryStage.setOnShown(e -> controller.init());
+        primaryStage.setOnCloseRequest(e -> controller.cleanup());
         primaryStage.show();
     }
 

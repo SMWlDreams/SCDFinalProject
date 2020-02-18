@@ -68,4 +68,8 @@ public class Board {
     public void setTroll() {
         ball.initTroll();
     }
+
+    public void cleanup() {
+        ball.killThread();
+    }
 }

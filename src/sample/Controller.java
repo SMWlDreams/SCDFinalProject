@@ -133,6 +133,9 @@ public class Controller {
                 start = false;
                 board.stop();
                 timeline = null;
+                bo7Start = false;
+                leftWinCount = 0;
+                rightWinCount = 0;
             } else {
                 System.out.println("LEFT SCORE: " + leftWinCount);
                 System.out.println("RIGHT SCORE: " + rightWinCount);
@@ -146,4 +149,8 @@ public class Controller {
 
     private String troll = "";
     private static final String TROLLER = "troll";
+
+    public void cleanup() {
+        board.cleanup();
+    }
 }

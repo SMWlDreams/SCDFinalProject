@@ -99,6 +99,10 @@ public class BallItem extends Ball {
 		update = true;
 	}
 
+	public void killThread() {
+		m_BallThread.loaded = false;
+	}
+
 	@Override
 	public void kill() {
 		m_BallThread.loaded = false;
